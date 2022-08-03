@@ -4,13 +4,28 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(235, 233, 233);
+  color: #fff;
+
+  &::before {
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    content: "";
+    background-image: url("assets/bg-pattern.jpg");
+    background-repeat: repeat;
+    filter: brightness(.2)
+  }
 }
 
 img {
   width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .container {

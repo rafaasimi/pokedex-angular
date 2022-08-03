@@ -3,8 +3,7 @@
   top: 0;
   width: 100%;
   overflow: hidden;
-  transition: all .3s;
-
+  transition: all 0.3s;
 
   background-color: #838383;
   border-radius: 8px;
@@ -17,7 +16,6 @@
 }
 
 .pokemon-card {
-  
 }
 
 .pokemon-card-description {
@@ -50,26 +48,131 @@
   border-radius: 4px;
   padding: 4px;
   background-color: #fff;
+
+  &--normal {
+    background-color: #729f3f;
+    color: #fff;
+  }
+
+  &--fire {
+    background-color: #fd7d24;
+    color: #fff;
+  }
+
+  &--water {
+    background-color: #4592c4;
+    color: #fff;
+  }
+
+  &--grass {
+    background-color: #9bcc50;
+    color: #000;
+  }
+
+  &--flying {
+    background: linear-gradient(360deg, #bebab9 50%, #3dc7ef 50%);
+    color: #000;
+  }
+
+  &--fighting {
+    background-color: #d56723;
+    color: #fff;
+  }
+
+  &--poison {
+    background-color: #b97fc9;
+    color: #fff;
+  }
+
+  &--eletric {
+    background-color: #efd636;
+    color: #000;
+  }
+
+  &--ground {
+    background: linear-gradient(360deg, #ab9842 50%, #f7de3f 50%);
+    color: #000;
+  }
+
+  &--rock {
+    background-color: #a38c21;
+    color: #fff;
+  }
+
+  &--psychic {
+    background-color: #f366b9;
+    color: #fff;
+  }
+
+  &--ice {
+    background-color: #51c4e7;
+    color: #000;
+  }
+
+  &--bug {
+    background-color: #729f3f;
+    color: #fff;
+  }
+
+  &--ghost {
+    background-color: #7b62a3;
+    color: #fff;
+  }
+
+  &--steel {
+    background-color: #9eb7b8;
+    color: #000;
+  }
+
+  &--dragon {
+    background: linear-gradient(360deg, #f16e57 50%, #53a4cf 50%);
+    color: #fff;
+  }
+
+  &--dark {
+    background-color: #707070;
+    color: #fff;
+  }
+
+  &--fairy {
+    background-color: #fdb9e9;
+    color: #000;
+  }
 }
 
 .pokemon-card__stats {
+  color: #000;
   margin-top: 100px;
   position: relative;
   padding: 16px;
   background-color: #fff;
   border-radius: 8px 8px 0 0;
+
+  progress {
+    width: 100%;
+    height: 20px;
+  }
 }
 
 .pokemon-card__stats img {
   position: absolute;
-  top: -100px;
+  inset: -100px 0;
+  transform: translateX(50px);
   max-width: 160px;
   -webkit-user-drag: none;
   -moz-user-drag: none;
 }
 
 .pokemon-card__stats > div {
+  display: flex;
+  gap: 16px;
+  align-items: center;
   margin-top: 60px;
+
+  span {
+    display: inline-block;
+    width: 50px;
+  }
 }
 
 .pokemon-card__stats div + div {
