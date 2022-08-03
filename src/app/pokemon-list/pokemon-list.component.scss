@@ -1,7 +1,13 @@
-.pokemon-list {
+:host {
+    margin: 40px 0;
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 257px));
     gap: 30px;
     flex-wrap: wrap;
     align-items: flex-start;
+
+    @media (max-width: 560px) {
+        justify-content: center;
+    }
 }

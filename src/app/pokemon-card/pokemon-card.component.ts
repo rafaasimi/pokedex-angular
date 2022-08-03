@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { UtilsService } from '../shared/utils.service';
 
 @Component({
   selector: 'app-pokemon-card',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PokemonCardComponent implements OnInit {
 
-  constructor() { }
+  @Input() numPokemon: string = '';
+
+  constructor(public utilsService: UtilsService) { }
 
   ngOnInit(): void {
   }
