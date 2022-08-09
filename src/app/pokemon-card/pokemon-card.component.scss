@@ -70,6 +70,8 @@
   }
 
   &--flying {
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(50%, #bebab9),color-stop(50%, #3dc7ef));
+    background: -o-linear-gradient(bottom, #bebab9 50%, #3dc7ef 50%);
     background: linear-gradient(360deg, #bebab9 50%, #3dc7ef 50%);
     color: #000;
   }
@@ -90,6 +92,9 @@
   }
 
   &--ground {
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(50%, #ab9842),color-stop(50%, #f7de3f)
+    );
+    background: -o-linear-gradient(bottom, #ab9842 50%, #f7de3f 50%);
     background: linear-gradient(360deg, #ab9842 50%, #f7de3f 50%);
     color: #000;
   }
@@ -125,6 +130,8 @@
   }
 
   &--dragon {
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(50%, #f16e57),color-stop(50%, #53a4cf));
+    background: -o-linear-gradient(bottom, #f16e57 50%, #53a4cf 50%);
     background: linear-gradient(360deg, #f16e57 50%, #53a4cf 50%);
     color: #fff;
   }
