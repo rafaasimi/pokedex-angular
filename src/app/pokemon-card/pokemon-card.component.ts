@@ -1,18 +1,19 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { UtilsService } from '../shared/utils.service';
+import { Pokemon } from '../shared/models/Pokemon';
+import { UtilsService } from '../shared/services/utils.service';
+
 
 @Component({
   selector: 'app-pokemon-card',
   templateUrl: './pokemon-card.component.html',
   styleUrls: ['./pokemon-card.component.scss']
 })
-export class PokemonCardComponent implements OnInit {
+export class PokemonCardComponent {
 
-  @Input() numPokemon: string = '';
+  @Input() pokemon!: Pokemon;
 
-  constructor(public utilsService: UtilsService) { }
+  constructor(public utilsService: UtilsService) {
 
-  ngOnInit(): void {
   }
 
 }

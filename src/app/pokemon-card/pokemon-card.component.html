@@ -1,16 +1,15 @@
 <div class="pokemon-card">
     <div class="pokemon-card-description">
         <div class="pokemon-card-description__title">
-            <span>Bulbasaur</span>
-            <span>#{{utilsService.formatPokemonNumber(numPokemon)}}</span>
+            <span>{{pokemon.name}}</span>
+            <span>#{{utilsService.formatPokemonNumber(pokemon.id)}}</span>
         </div>
         <div class="pokemon-card-description__types">
-            <div class="pokemon-card-description__type pokemon-card-description__type--grass">Grass</div>
-            <div class="pokemon-card-description__type pokemon-card-description__type--poison">Poison</div>
+            <div *ngFor="let type of pokemon.types" class="pokemon-card-description__type pokemon-card-description__type--{{type.toLowerCase()}}">{{type}}</div>
         </div>
     </div>
     <div class="pokemon-card__stats">
-        <img src="https://cdn.traction.one/pokedex/pokemon/1.png" alt="">
+        <img src="{{ pokemon.image }}" alt="{{ pokemon.image }}">
         <div>
             <span>HP</span>
             <progress value="45" max="100">45%</progress>

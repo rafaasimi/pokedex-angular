@@ -6,8 +6,8 @@ import { Injectable } from '@angular/core';
 export class UtilsService {
   constructor() {}
 
-  formatPokemonNumber(numPokemon: string) {
+  formatPokemonNumber(idPokemon: number) {
     // Preenche o número do pokemon com zero a esquerda (Formato: #001)
-    return numPokemon.padStart(3, '0');
+    return String(idPokemon).padStart(3, '0');
   }
 }
